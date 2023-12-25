@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LinkedIn Clone</title>
+    <title>LinkedIn Clone - HTML | CSS</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -59,17 +61,379 @@
 
     <div class="container">
       <!-- Left Sidebar -->
-      <div class="left-sidebar"></div>
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img src="images/cover-pic.png" alt="" width="100%" />
+          <div class="sidebar-profile-info">
+            <img src="images/profile1.jpg" alt="" />
+            <h1>Chirag Makvana</h1>
+            <h3>Web Developer at Microsoft</h3>
+            <ul>
+              <li>Your profile views <span>45</span></li>
+              <li>Your post views <span>789</span></li>
+              <li>Your connections <span>302</span></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-profile-link">
+            <a href="#"><img src="images/items.png" alt="" />My items</a>
+            <a href="#"><img src="images/premium.png" alt="" />Try Preminum</a>
+          </div>
+        </div>
+
+        <div class="sidebar-activiy">
+          <h3>RECENT</h3>
+          <a href="#"><img src="images/recent.png" alt="" />Web Development</a>
+          <a href="#"><img src="images/recent.png" alt="" />Online Learning</a>
+          <a href="#"><img src="images/recent.png" alt="" />Code Better</a>
+          <a href="#"><img src="images/recent.png" alt="" />Group Learning</a>
+          <a href="#"><img src="images/recent.png" alt="" />Use Interface</a>
+          <a href="#"><img src="images/recent.png" alt="" />Learn Online</a>
+
+          <h3>GROUPS</h3>
+          <a href="#"
+            ><img src="images/group.png" alt="" />HTML & CSS Learners</a
+          >
+          <a href="#"><img src="images/group.png" alt="" />Web Design Group</a>
+          <a href="#"
+            ><img src="images/group.png" alt="" />React JS Learning Group</a
+          >
+          <a href="#"
+            ><img src="images/group.png" alt="" />FrontEnd Developer Group</a
+          >
+
+          <h3>HASHTAG</h3>
+          <a href="#"><img src="images/hashtag.png" alt="" />webdevelopement</a>
+          <a href="#"
+            ><img src="images/hashtag.png" alt="" />reactjsforbeginners</a
+          >
+          <a href="#"
+            ><img src="images/hashtag.png" alt="" />learnwhatmatters</a
+          >
+
+          <div class="discover-more-link">
+            <a href="#">Discover more</a>
+          </div>
+        </div>
+      </div>
 
       <!-- Left Sidebar End -->
 
       <!-- Main Content -->
-      <div class="main-content"></div>
+      <div class="main-content">
+        <div class="create-post">
+          <div class="create-post-input">
+            <img src="images/profile1.jpg" alt="" />
+            <textarea
+              name=""
+              id=""
+              placeholder="Write a Post"
+              rows="2"
+            ></textarea>
+          </div>
+          <div class="create-post-links">
+            <li><img src="images/photo.png" alt="" />Photo</li>
+            <li><img src="images/video.png" alt="" />Video</li>
+            <li><img src="images/event.png" alt="" />Event</li>
+            <li>Post</li>
+          </div>
+        </div>
+
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sort by: <span>top <img src="images/down-arrow.png" alt="" /></span>
+          </p>
+        </div>
+
+        <!-- Post - 1 -->
+        <div class="post">
+          <div class="post-author">
+            <img src="images/profile3.jpg" alt="" />
+            <div>
+              <h1>Disha Makvana</h1>
+              <small>Investor | Founder of XYZ</small>
+              <small>7 hours ago</small>
+            </div>
+          </div>
+
+          <p>
+            The succes of every website depends on search engine optimisation
+            and digital marking strategy. If you are on first page of all major
+            search engines then you are ahead among your competitors.
+          </p>
+          <img class="post-image" src="images/post-image-4.png" alt="" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" alt="" />
+              <img src="images/love.png" alt="" />
+              <img src="images/clap.png" alt="" />
+              <span class="liked-users">Krupal Patel and 89 others</span>
+            </div>
+
+            <div>
+              <span>34 comments &middot; 20 shares</span>
+            </div>
+          </div>
+
+          <div class="post-activity">
+            <div>
+              <img src="images/profile1.jpg" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+
+            <div class="post-activity-link">
+              <img src="images/like.png" alt="" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" alt="" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" alt="" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" alt="" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post - 2 -->
+        <div class="post">
+          <div class="post-author">
+            <img src="images/profile4.jpg" alt="" />
+            <div>
+              <h1>Dhyana Mardia</h1>
+              <small>React JS | JavaScript Developer</small>
+              <small>2 hours ago</small>
+            </div>
+          </div>
+
+          <p>
+            At a high level, the Fiber architecture is a new way of reconciling
+            the virtual DOM in React. Reconciliation is the process by which
+            React determines what changes need to be made to the UI based on
+            changes to the application state. Traditionally, React performs
+            reconciliation synchronously, which blocks the main thread while
+            calculating the changes and updates the DOM.
+          </p>
+          <img class="post-image" src="images/post-image-2.png" alt="" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" alt="" />
+              <img src="images/love.png" alt="" />
+              <img src="images/clap.png" alt="" />
+              <span class="liked-users">Krupal Patel and 89 others</span>
+            </div>
+
+            <div>
+              <span>34 comments &middot; 20 shares</span>
+            </div>
+          </div>
+
+          <div class="post-activity">
+            <div>
+              <img src="images/profile1.jpg" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+
+            <div class="post-activity-link">
+              <img src="images/like.png" alt="" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" alt="" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" alt="" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" alt="" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post - 3 -->
+
+        <div class="post">
+          <div class="post-author">
+            <img src="images/profile5.jpg" alt="" />
+            <div>
+              <h1>Mohit Adroja</h1>
+              <small>BackEnd Developer | Freelancer</small>
+              <small>18 hours ago</small>
+            </div>
+          </div>
+
+          <p>
+            PHP.... <br />
+            MongoDB.... <br />Django.... <br />Node....
+          </p>
+          <img class="post-image" src="images/post-image-1.png" alt="" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" alt="" />
+              <img src="images/love.png" alt="" />
+              <img src="images/clap.png" alt="" />
+              <span class="liked-users">Krupal Patel and 89 others</span>
+            </div>
+
+            <div>
+              <span>34 comments &middot; 20 shares</span>
+            </div>
+          </div>
+
+          <div class="post-activity">
+            <div>
+              <img src="images/profile1.jpg" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+
+            <div class="post-activity-link">
+              <img src="images/like.png" alt="" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" alt="" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" alt="" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" alt="" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post - 4 -->
+        <div class="post">
+          <div class="post-author">
+            <img src="images/profile2.jpg" alt="" />
+            <div>
+              <h1>Sejal Makvana</h1>
+              <small>Web Designer at Shiksha Software</small>
+              <small>1 day ago</small>
+            </div>
+          </div>
+
+          <p>
+            The web browser passes the request to the DNS Server which converts
+            the domain name into the IP address of the site. The DNS Server
+            passes the request to the main server where the website is stored.
+            The main server sends the response to the web browser or to the user
+          </p>
+          <img class="post-image" src="images/post-image-3.png" alt="" />
+          <div class="post-stats">
+            <div>
+              <img src="images/thumbsup.png" alt="" />
+              <img src="images/love.png" alt="" />
+              <img src="images/clap.png" alt="" />
+              <span class="liked-users">Krupal Patel and 89 others</span>
+            </div>
+
+            <div>
+              <span>34 comments &middot; 20 shares</span>
+            </div>
+          </div>
+
+          <div class="post-activity">
+            <div>
+              <img src="images/profile1.jpg" class="post-activity-user-icon" />
+              <img
+                src="images/down-arrow.png"
+                class="post-activity-arrow-icon"
+              />
+            </div>
+
+            <div class="post-activity-link">
+              <img src="images/like.png" alt="" />
+              <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/comment.png" alt="" />
+              <span>Comment</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/share.png" alt="" />
+              <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+              <img src="images/send.png" alt="" />
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Main Content End -->
 
       <!-- Right Sidebar -->
-      <div class="right-sidebar"></div>
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="images/more.png" class="info-icon" alt="" />
+          <h3>Trending News</h3>
+          <a href="#">High demand for skilled manpower</a>
+          <span>1d ago &middot; 10,934 readers</span>
+
+          <a href="#">Less work visa for US, more for UK</a>
+          <span>12h ago &middot; 23,641 readers</span>
+
+          <a href="#">Gautam Adani is the world's third richest person</a>
+          <span>2d ago &middot; 8,506 readers</span>
+
+          <a href="#">Career growing horizontally too</a>
+          <span>19h ago &middot; 1,789 readers</span>
+
+          <a href="#">More hiring = higher confidence</a>
+          <span>14h ago &middot; 12,005 readers</span>
+
+          <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Master the React JS</p>
+          <div>
+            <img src="images/profile1.jpg" alt="" />
+            <img src="images/mi-logo.png" alt="" />
+          </div>
+          <b>Brand and Demand in Xiaomi</b>
+          <a href="#" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-link">
+          <a href="#">About</a>
+          <a href="#">Help Center</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Advertising</a>
+          <a href="#">Get the App</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">More</a>
+        </div>
+
+        <div class="copyright-msg">
+          <img src="images/logo.png" alt="" />
+          <p>Linkedup &#169; 2023. All right reserved</p>
+        </div>
+      </div>
 
       <!-- Right Sidebar End -->
     </div>
