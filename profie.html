@@ -1,266 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LinkedIn Clone - Profile Page</title>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="navbar-left">
-        <a href="index.html" class="logo"> <img src="images/logo.png" /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkedIn Clone - Profile Page</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div class="search-box">
-          <img src="images/search.png" alt="" />
-          <input type="text" placeholder="Search" />
-        </div>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="logo"> <img src="images/logo.png" /></a>
+
+      <div class="search-box">
+        <img src="images/search.png" alt="" />
+        <input type="text" placeholder="Search" />
       </div>
-      <div class="navbar-center">
-        <ul>
-          <li>
-            <a href="#" class="active"
-              ><img src="images/home.png" alt="" /><span>Home</span></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img src="images/network.png" alt="" /><span>My Network</span></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img src="images/jobs.png" alt="" /><span>Jobs</span></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img src="images/message.png" alt="" /><span>Messaging</span></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img src="images/notification.png" alt="" /><span
-                >Notifications</span
-              ></a
-            >
-          </li>
-        </ul>
+    </div>
+    <div class="navbar-center">
+      <ul>
+        <li>
+          <a href="#" class="active"><img src="images/home.png" alt="" /><span>Home</span></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/network.png" alt="" /><span>My Network</span></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/jobs.png" alt="" /><span>Jobs</span></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/message.png" alt="" /><span>Messaging</span></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/notification.png" alt="" /><span>Notifications</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <div class="online">
+        <img src="images/profile1.jpg" class="nav-profile-img" onclick="toggleMenu()" alt="" />
       </div>
-      <div class="navbar-right">
-        <div class="online">
-          <img
-            src="images/profile1.jpg"
-            class="nav-profile-img"
-            onclick="toggleMenu()"
-            alt=""
-          />
-        </div>
-      </div>
+    </div>
 
-      <!-- Profile DropDown Menu -->
-      <div class="profile-menu-wrap" id="profile-menu">
-        <div class="profile-menu">
-          <div class="user-info">
-            <img src="images/profile1.jpg" alt="" />
-            <div>
-              <h3>Chirag Makvana</h3>
-              <a href="#">See Your Profile</a>
-            </div>
-          </div>
-          <hr />
-          <a href="#" class="profile-menu-link">
-            <img src="images/feedback.png" alt="" />
-            <p>Give Feedback</p>
-            <span>></span>
-          </a>
-          <a href="#" class="profile-menu-link">
-            <img src="images/setting.png" alt="" />
-            <p>Settings & Privacy</p>
-            <span>></span>
-          </a>
-          <a href="#" class="profile-menu-link">
-            <img src="images/help.png" alt="" />
-            <p>Help & Support</p>
-            <span>></span>
-          </a>
-          <a href="#" class="profile-menu-link">
-            <img src="images/display.png" alt="" />
-            <p>Display and Accessibility</p>
-            <span>></span>
-          </a>
-          <a href="#" class="profile-menu-link">
-            <img src="images/logout.png" alt="" />
-            <p>Logout</p>
-            <span>></span>
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Navbar End -->
-
-    <div class="container">
-      <div class="profile-main">
-        <div class="profile-container">
-          <img src="images/cover-pic.png" width="100%" />
-          <div class="profile-container-inner">
-            <img src="images/profile1.jpg" class="profile-pic" />
-            <h1>Chirag Makvana</h1>
-            <b>Web Developer at Microsoft | Freelancer </b>
-            <p>Ahmedabad, Gujarat &middot; <a href="#">Contact Info</a></p>
-
-            <div class="mutual-connection">
-              <img src="images/profile2.jpg" alt="" />
-              <span>1 mutual connection : Jay Patel</span>
-            </div>
-            <div class="profile-button">
-              <a href="#" class="primary-btn"
-                ><img src="images/connect.png" alt="" />Connect</a
-              >
-              <a href="#"><img src="images/chat.png" alt="" />Message</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="profile-desc">
-          <h2>About</h2>
-          <p>
-            I'm a front end developer with five years of experience in web
-            development. I've worked on a variety of projects for clients in the
-            retail, travel, and healthcare industries. I'm passionate about
-            creating great user experiences and have a strong understanding of
-            usability and accessibility standards.
-          </p>
-          <a href="#" class="see-more-link">See more</a>
-        </div>
-
-        <div class="profile-desc">
-          <h2>Experience</h2>
-          <div class="profile-desc-row">
-            <img src="images/microsoft.png" alt="" />
-            <div>
-              <h3>Lead Front-End Developer</h3>
-              <b>Microsoft &middot; Full-time</b>
-              <b>Feb 2022 - present &middot; 2 year</b>
-              <p>
-                Currently working as a Front-End Developer and Developing new
-                user-facing features, Determining the structure and design of
-                web pages, Using a variety of markup languages to create the web
-                pages
-              </p>
-              <hr />
-            </div>
-          </div>
-
-          <div class="profile-desc-row">
-            <img src="images/slack.png" alt="" />
-            <div>
-              <h3>Junior Front-End Developer</h3>
-              <b>Slack &middot; Full-time</b>
-              <b>Jan 2021 - Jan 2022 &middot; 1 year</b>
-              <p>
-                Currently working as a Front-End Developer and Developing new
-                user-facing features, Determining the structure and design of
-                web pages, Using a variety of markup languages to create the web
-                pages
-              </p>
-              <hr />
-            </div>
-          </div>
-
-          <div class="profile-desc-row">
-            <img src="images/google.png" alt="" />
-            <div>
-              <h3>Web Developer</h3>
-              <b>Google Inc &middot; Full-time</b>
-              <b>Jan 2019 - Dec 2021 &middot; 2 year</b>
-              <p>
-                Currently working as a Front-End Developer and Developing new
-                user-facing features, Determining the structure and design of
-                web pages, Using a variety of markup languages to create the web
-                pages
-              </p>
-            </div>
-          </div>
-
-          <hr />
-          <a href="#" class="experience-link">
-            Show all 7 Experiences <img src="images/right-arrow.png" alt=""
-          /></a>
-        </div>
-
-        <div class="profile-desc">
-          <h2>Education</h2>
-          <div class="profile-desc-row">
-            <img src="images/stanford.png" alt="" />
-            <div>
-              <h3>Stanford University</h3>
-              <b>BE, Computer Engineering</b>
-              <b>2018-2022</b>
-              <hr />
-            </div>
-          </div>
-          <div class="profile-desc-row">
-            <img src="images/north.png" alt="" />
-            <div>
-              <h3>Northwestern University</h3>
-              <b>Computer Science</b>
-              <b>2015-2018</b>
-              <hr />
-            </div>
-          </div>
-          <div class="profile-desc-row">
-            <img src="images/mit.png" alt="" />
-            <div>
-              <h3>Harvard University</h3>
-              <b>Senior High School</b>
-              <b>2005-2015</b>
-            </div>
-          </div>
-        </div>
-
-        <div class="profile-desc">
-          <h2>Skills</h2>
-          <a href="#" class="skills-btn">LeaderShip</a>
-          <a href="#" class="skills-btn">Web Design</a>
-          <a href="#" class="skills-btn">HTML</a>
-          <a href="#" class="skills-btn">CSS</a>
-          <a href="#" class="skills-btn">JavaScript</a>
-          <a href="#" class="skills-btn">React JS</a>
-          <a href="#" class="skills-btn">Redux</a>
-          <a href="#" class="skills-btn">Tailwind CSS</a>
-          <a href="#" class="skills-btn">Bootstrap</a>
-        </div>
-
-        <div class="profile-desc">
-          <h2>Languages</h2>
-          <a href="#" class="lang-btn">English</a>
-          <a href="#" class="lang-btn">Hindi</a>
-          <a href="#" class="lang-btn">Gujrati</a>
-        </div>
-      </div>
-      <div class="profile-sidebar">
-        <div class="sidebar-ad">
-          <small>Ad &middot; &middot; &middot;</small>
-          <p>Master the React JS</p>
+    <!-- Profile DropDown Menu -->
+    <div class="profile-menu-wrap" id="profile-menu">
+      <div class="profile-menu">
+        <div class="user-info">
+          <img src="images/profile1.jpg" alt="" />
           <div>
-            <img src="images/profile1.jpg" alt="" />
-            <img src="images/mi-logo.png" alt="" />
+            <h3>Chirag Makvana</h3>
+            <a href="profie.html">See Your Profile</a>
           </div>
-          <b>Brand and Demand in Xiaomi</b>
-          <a href="#" class="ad-link">Learn More</a>
+        </div>
+        <hr />
+        <a href="#" class="profile-menu-link">
+          <img src="images/feedback.png" alt="" />
+          <p>Give Feedback</p>
+          <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+          <img src="images/setting.png" alt="" />
+          <p>Settings & Privacy</p>
+          <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+          <img src="images/help.png" alt="" />
+          <p>Help & Support</p>
+          <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+          <img src="images/display.png" alt="" />
+          <p>Display and Accessibility</p>
+          <span>></span>
+        </a>
+        <a href="#" class="profile-menu-link">
+          <img src="images/logout.png" alt="" />
+          <p>Logout</p>
+          <span>></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar End -->
+
+  <div class="container">
+    <div class="profile-main">
+      <div class="profile-container">
+        <img src="images/cover-pic.png" width="100%" />
+        <div class="profile-container-inner">
+          <img src="images/profile1.jpg" class="profile-pic" />
+          <h1>Chirag Makvana</h1>
+          <b>Web Developer at Microsoft | Freelancer </b>
+          <p>Ahmedabad, Gujarat &middot; <a href="#">Contact Info</a></p>
+
+          <div class="mutual-connection">
+            <img src="images/profile2.jpg" alt="" />
+            <span>1 mutual connection : Jay Patel</span>
+          </div>
+          <div class="profile-button">
+            <a href="#" class="primary-btn"><img src="images/connect.png" alt="" />Connect</a>
+            <a href="#"><img src="images/chat.png" alt="" />Message</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-desc">
+        <h2>About</h2>
+        <p>
+          I'm a front end developer with five years of experience in web
+          development. I've worked on a variety of projects for clients in the
+          retail, travel, and healthcare industries. I'm passionate about
+          creating great user experiences and have a strong understanding of
+          usability and accessibility standards.
+        </p>
+        <a href="#" class="see-more-link">See more</a>
+      </div>
+
+      <div class="profile-desc">
+        <h2>Experience</h2>
+        <div class="profile-desc-row">
+          <img src="images/microsoft.png" alt="" />
+          <div>
+            <h3>Lead Front-End Developer</h3>
+            <b>Microsoft &middot; Full-time</b>
+            <b>Feb 2022 - present &middot; 2 year</b>
+            <p>
+              Currently working as a Front-End Developer and Developing new
+              user-facing features, Determining the structure and design of
+              web pages, Using a variety of markup languages to create the web
+              pages
+            </p>
+            <hr />
+          </div>
         </div>
 
-        <div class="sidebar-people">
-          <h3>People you may know</h3>
-          <div class="sidebar-people-row"></div>
+        <div class="profile-desc-row">
+          <img src="images/slack.png" alt="" />
+          <div>
+            <h3>Junior Front-End Developer</h3>
+            <b>Slack &middot; Full-time</b>
+            <b>Jan 2021 - Jan 2022 &middot; 1 year</b>
+            <p>
+              Currently working as a Front-End Developer and Developing new
+              user-facing features, Determining the structure and design of
+              web pages, Using a variety of markup languages to create the web
+              pages
+            </p>
+            <hr />
+          </div>
+        </div>
+
+        <div class="profile-desc-row">
+          <img src="images/google.png" alt="" />
+          <div>
+            <h3>Web Developer</h3>
+            <b>Google Inc &middot; Full-time</b>
+            <b>Jan 2019 - Dec 2021 &middot; 2 year</b>
+            <p>
+              Currently working as a Front-End Developer and Developing new
+              user-facing features, Determining the structure and design of
+              web pages, Using a variety of markup languages to create the web
+              pages
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <a href="#" class="experience-link">
+          Show all 7 Experiences <img src="images/right-arrow.png" alt="" /></a>
+      </div>
+
+      <div class="profile-desc">
+        <h2>Education</h2>
+        <div class="profile-desc-row">
+          <img src="images/stanford.png" alt="" />
+          <div>
+            <h3>Stanford University</h3>
+            <b>BE, Computer Engineering</b>
+            <b>2018-2022</b>
+            <hr />
+          </div>
+        </div>
+        <div class="profile-desc-row">
+          <img src="images/north.png" alt="" />
+          <div>
+            <h3>Northwestern University</h3>
+            <b>Computer Science</b>
+            <b>2015-2018</b>
+            <hr />
+          </div>
+        </div>
+        <div class="profile-desc-row">
+          <img src="images/mit.png" alt="" />
+          <div>
+            <h3>Harvard University</h3>
+            <b>Senior High School</b>
+            <b>2005-2015</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-desc">
+        <h2>Skills</h2>
+        <a href="#" class="skills-btn">LeaderShip</a>
+        <a href="#" class="skills-btn">Web Design</a>
+        <a href="#" class="skills-btn">HTML</a>
+        <a href="#" class="skills-btn">CSS</a>
+        <a href="#" class="skills-btn">JavaScript</a>
+        <a href="#" class="skills-btn">React JS</a>
+        <a href="#" class="skills-btn">Redux</a>
+        <a href="#" class="skills-btn">Tailwind CSS</a>
+        <a href="#" class="skills-btn">Bootstrap</a>
+      </div>
+
+      <div class="profile-desc">
+        <h2>Languages</h2>
+        <a href="#" class="lang-btn">English</a>
+        <a href="#" class="lang-btn">Hindi</a>
+        <a href="#" class="lang-btn">Gujrati</a>
+      </div>
+    </div>
+    <div class="profile-sidebar">
+      <div class="sidebar-ad">
+        <small>Ad &middot; &middot; &middot;</small>
+        <p>Master the React JS</p>
+        <div>
+          <img src="images/profile1.jpg" alt="" />
+          <img src="images/mi-logo.png" alt="" />
+        </div>
+        <b>Brand and Demand in Xiaomi</b>
+        <a href="#" class="ad-link">Learn More</a>
+      </div>
+
+      <div class="sidebar-people">
+        <h3>People you may know</h3>
+        <div class="sidebar-grid">
+
+          <div class="sidebar-people-row">
+            <img src="images/profile4.jpg" alt="" />
+            <div>
+              <h2>Janki Patel</h2>
+              <p>Senior React JS Developer</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/profile3.jpg" alt="" />
+            <div>
+              <h2>Meera Adroja</h2>
+              <p>Head of marketing in XYZ</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/profile5.jpg" alt="" />
+            <div>
+              <h2>Chintan Patel</h2>
+              <p>BackEnd Developer</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/profile2.jpg" alt="" />
+            <div>
+              <h2>Suhani Shah</h2>
+              <p>SEO Executive</p>
+              <a href="#">Connect</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <script src="main.js"></script>
-  </body>
+  </div>
+
+  <div class="profile-footer">
+    <div class="sidebar-useful-link">
+      <a href="#">About</a>
+      <a href="#">Help Center</a>
+      <a href="#">Accessibility</a>
+      <a href="#">Advertising</a>
+      <a href="#">Get the App</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">More</a>
+    </div>
+
+    <div class="copyright-msg">
+      <img src="images/logo.png" alt="" />
+      <p>Linkedup &#169; 2023. All right reserved</p>
+    </div>
+  </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
